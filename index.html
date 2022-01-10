@@ -11,6 +11,8 @@
   <main class="main">
     <div id="container"></div>
     <div id="controls">
+      <input type="range" min="3" max="100" value="50" class="slider" id="boxSlider">
+      <div class="text" id="slideValue"></div>
       <button id="clear">Clear</button>
     </div>
   </main>
@@ -20,15 +22,18 @@
   body{
     background: black;
   }
+  .text {
+    color:white;
+  }
   .main {
     margin: 0 auto;
     width: 60vw;
   }
   .gray {
-    background-color: gray;
+    background-color: rgb(4, 141, 22);
   }
   #container {
-    background: white;
+    background: rgb(53, 50, 50);
     display: grid;
     grid-gap:0;
     width: 60vw;
